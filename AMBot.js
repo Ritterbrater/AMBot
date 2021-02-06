@@ -140,6 +140,7 @@ function clickMaxes() {
 	$thirdMax.className==="storebtn" && $thirdMax.click();
 	$secondMax.className==="storebtn" && $secondMax.click();
 	$newDim.click();
+	$softReset.click();
 }
 
 var $infDim1 = el("infMax1");
