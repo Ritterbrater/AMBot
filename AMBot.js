@@ -119,14 +119,14 @@ function clickSingles() {
 }
 
 var $tickSpeedMax = el("tickSpeedMax");
-var $eightMax = el("eightMax");
-var $seventhMax = el("seventhMax");
-var $sixthMax = el("sixthMax");
-var $fifthMax = el("fifthMax");
-var $fourthMax = el("fourthMax");
-var $thirdMax = el("thirdMax");
-var $secondMax = el("secondMax");
-var $firstMax = el("firstMax");
+var $eightMax = el("M8");
+var $seventhMax = el("M7");
+var $sixthMax = el("M6");
+var $fifthMax = el("M5");
+var $fourthMax = el("M4");
+var $thirdMax = el("M3");
+var $secondMax = el("M2");
+var $firstMax = el("M1");
 var $newDim = el("newDimensionButton");
 
 function clickMaxes() {
