@@ -131,7 +131,7 @@ var $newDim = el("newDimensionButton");
 
 function clickMaxes() {
 	$tickSpeedMax.click();
-	buyOneDimension(1);
+	
 	$eightMax.className==="storebtn" && $eightMax.click();
 	$firstMax.className==="storebtn" && $firstMax.click();
 	$seventhMax.className==="storebtn" && $seventhMax.click();
@@ -142,6 +142,7 @@ function clickMaxes() {
 	$secondMax.className==="storebtn" && $secondMax.click();
 	$newDim.click();
 	$softReset.click();
+	buyOneDimension(1);
 }
 
 var $infDim1 = el("infMax1");
