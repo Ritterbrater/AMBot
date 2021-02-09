@@ -1,3 +1,13 @@
+### All credit to Ivark, his original readme below my notes (only modified url's to link to my fork, rest intact):
+
+Updated fork of ivark's antimatter dimensions bot. Handles the simple repetitive stuff but was somewhat broken and out of date. See commit history for specific fixes, let me know if you find any other broken pieces.
+
+I only picked this up when I started a new run on the NG+ 3C mod (credit to Jacorb), initial commits just fixed first layer issues, so there's probably others that I'll get to in the coming days and will fix as I unlock. 
+
+
+
+# IVARK'S ORIGINAL README BEGINS HERE
+
 # AMBot
 Bot for Antimatter Dimensions (http://ivark.github.io/)
 
@@ -9,13 +19,13 @@ Create a bookmarklet with the following URL:
 
 Chrome:
 ```
-javascript:var amBot = document.createElement('script');amBot.src="https://rawgit.com/technodestructo/AMBot/master/AMBot.js";document.getElementsByTagName('head')[0].appendChild(amBot);
+javascript:var amBot = document.createElement('script');amBot.src="https://cosgrove.github.io/AMBot/AMBot.js";document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
 Firefox:
 ```
 javascript: (function () { 
     var amBot = document.createElement('script'); 
-    amBot.setAttribute('src', 'https://rawgit.com/technodestructo/AMBot/master/AMBot.js');                  
+    amBot.setAttribute('src', 'https://cosgrove.github.io/AMBot/AMBot.js');                  
   document.body.appendChild(amBot); 
  }());
  ```
@@ -25,7 +35,7 @@ Or copy paste into console:
 ```
 var amBot = document.createElement('script');
 
-amBot.src = "https://rawgit.com/technodestructo/AMBot/master/AMBot.js";
+amBot.src = "https://cosgrove.github.io/AMBot/AMBot.js";
 
 document.getElementsByTagName('head')[0].appendChild(amBot);
 ```
