@@ -168,8 +168,8 @@ function clickInfDims(){
 
 var $bigcrunch = el("bigcrunch");
 
-function clickinfinity() {
-	$bigcrunch.style.display === "block" && $bigcrunch.click();
+function clickInfinity() {
+	$bigcrunch.click();
 }
 
 //var amBot = document.createElement('script');
