@@ -53,7 +53,7 @@ var $softReset = el("softReset");
 
 function startAMBot() {
 	intervals = [
-		setInterval(clickinfinity, 1),
+		setInterval(clickInfinity, 1),
 		setInterval(clickMaxAll, 1),
 		setInterval(clickSingles, 1),
 		setInterval(clickMaxes, 1),
@@ -143,7 +143,7 @@ function clickMaxes() {
 	$newDim.click();
 	$softReset.click();
 	buyOneDimension(1);
-	clickInfinity();
+	
 }
 
 var $infDim1 = el("infMax1");
