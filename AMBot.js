@@ -143,6 +143,7 @@ function clickMaxes() {
 	$newDim.click();
 	$softReset.click();
 	buyOneDimension(1);
+	clickInfinity();
 }
 
 var $infDim1 = el("infMax1");
