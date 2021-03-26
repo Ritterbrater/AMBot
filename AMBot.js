@@ -73,13 +73,13 @@ function startAMBot() {
 			if(parseInt(reset_num) > 500) {
 				clickBoost();
 			}
-		}, 1)
+		}, 1), 
 		setInterval(function() {
 			if($shiftt.checked)
 			{
 				clickBoost();
 			}
-		}
+		}, 1)
 	];
 }
 	
