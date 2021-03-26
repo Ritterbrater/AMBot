@@ -35,6 +35,7 @@ function initGUI() {
 	
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; left:0; top:0; bottom:0; width:45px">');
 	$("#AMBotTitleTab").append('<p style="position:absolute; right:0; top:0; bottom:0; font-family:Helvetica; font-weight:Light; font-size:14pt; color:#c6d9ec;">ambot&nbsp</p>');
+	$("#AMBotTitleTab").append('<br> <input type="checkbox" id="Shift" name="Shift" checked> <label for="Shift">Shift</label>');
 	/*$("#dimensions").prepend('<div id="thisInfinity">');
 	$("#dimensions").prepend('<div id="bestInfinity">');
 	$("#dimensions").prepend('<div id="infinitied">');*/
@@ -50,6 +51,7 @@ var $secondSoftReset = el("secondSoftReset");
 var $resetLabel = el("resetLabel");
 var $softReset = el("softReset");
 var $first = el("first");
+var $shiftt = el("Shift");
 
 
 function startAMBot() {
@@ -72,6 +74,12 @@ function startAMBot() {
 				clickBoost();
 			}
 		}, 1)
+		setInterval(function() {
+			if($shiftt.checked)
+			{
+				clickBoost();
+			}
+		}
 	];
 }
 	
