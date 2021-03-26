@@ -147,13 +147,20 @@ function clickMaxes() {
 	$tickSpeedMax.click();
 	if($eightMax != null)
 		$eightMax.className==="storebtn" && $eightMax.click();
-	$firstMax.className==="storebtn" && $firstMax.click();
-	$seventhMax.className==="storebtn" && $seventhMax.click();
-	$sixthMax.className==="storebtn" && $sixthMax.click();
-	$fifthMax.className==="storebtn" && $fifthMax.click();
-	$fourthMax.className==="storebtn" && $fourthMax.click();
-	$thirdMax.className==="storebtn" && $thirdMax.click();
-	$secondMax.className==="storebtn" && $secondMax.click();
+	if($firstMax != null)
+		$firstMax.className==="storebtn" && $firstMax.click();
+	if($seventhMax != null)
+		$seventhMax.className==="storebtn" && $seventhMax.click();
+	if($sixthMax != null)
+		$sixthMax.className==="storebtn" && $sixthMax.click();
+	if($fifthMax != null)
+		$fifthMax.className==="storebtn" && $fifthMax.click();
+	if($fourthMax != null)
+		$fourthMax.className==="storebtn" && $fourthMax.click();
+	if($thirdMax != null)
+		$thirdMax.className==="storebtn" && $thirdMax.click();
+	if($secondMax != null)
+		$secondMax.className==="storebtn" && $secondMax.click();
 	$newDim.click();
 	$softReset.click();
 	buyOneDimension(1);
