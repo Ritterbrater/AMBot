@@ -49,6 +49,7 @@ var $secondResetLabel = el("secondResetLabel");
 var $secondSoftReset = el("secondSoftReset");
 var $resetLabel = el("resetLabel");
 var $softReset = el("softReset");
+var $first = el("first");
 
 
 function startAMBot() {
@@ -109,7 +110,11 @@ function clickGalaxy() {
 }
 
 function clickBoost() {
-	//$softReset.click();
+	if (!$softReset.classList.contains("unavailablebtn"))
+	{
+		$softReset.click();
+		$first.click();
+	}
 }
 
 var $tickSpeed = el("tickSpeed");
