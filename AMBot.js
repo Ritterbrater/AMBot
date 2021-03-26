@@ -39,6 +39,7 @@ function initGUI() {
 	/*$("#dimensions").prepend('<div id="thisInfinity">');
 	$("#dimensions").prepend('<div id="bestInfinity">');
 	$("#dimensions").prepend('<div id="infinitied">');*/
+	$shiftt = el("Shift");
 }
 
 function el(id) {
@@ -51,18 +52,18 @@ var $secondSoftReset = el("secondSoftReset");
 var $resetLabel = el("resetLabel");
 var $softReset = el("softReset");
 var $first = el("first");
-var $shiftt = el("Shift");
+var $shiftt = null;
 
 
 function startAMBot() {
 	intervals = [
-		setInterval(clickInfinity, 1),
-		setInterval(clickMaxAll, 1),
-		setInterval(clickSingles, 1),
-		setInterval(clickMaxes, 1),
-		setInterval(clickInfDims, 1),
-		setInterval(clickReplicanti, 1),
-		setInterval(clickTheorem, 1),
+		setInterval(clickInfinity, 50),
+		setInterval(clickMaxAll, 50),
+		setInterval(clickSingles, 50),
+		setInterval(clickMaxes, 50),
+		setInterval(clickInfDims, 50),
+		setInterval(clickReplicanti, 50),
+		setInterval(clickTheorem, 50),
 		setInterval(function () {
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
@@ -73,13 +74,13 @@ function startAMBot() {
 			if(parseInt(reset_num) > 500) {
 				clickBoost();
 			}
-		}, 1), 
+		}, 50), 
 		setInterval(function() {
 			if($shiftt.checked)
 			{
 				clickBoost();
 			}
-		}, 1)
+		}, 50)
 	];
 }
 	
@@ -144,8 +145,8 @@ var $newDim = el("newDimensionButton");
 
 function clickMaxes() {
 	$tickSpeedMax.click();
-	
-	$eightMax.className==="storebtn" && $eightMax.click();
+	if($eightMax != null)
+		$eightMax.className==="storebtn" && $eightMax.click();
 	$firstMax.className==="storebtn" && $firstMax.click();
 	$seventhMax.className==="storebtn" && $seventhMax.click();
 	$sixthMax.className==="storebtn" && $sixthMax.click();
