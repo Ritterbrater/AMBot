@@ -36,10 +36,12 @@ function initGUI() {
 	$("#AMBotContainer").append('<div id="AMBotTitleTab" sytle="position:absolute; left:0; top:0; bottom:0; width:45px">');
 	$("#AMBotTitleTab").append('<p style="position:absolute; right:0; top:0; bottom:0; font-family:Helvetica; font-weight:Light; font-size:14pt; color:#c6d9ec;">ambot&nbsp</p>');
 	$("#AMBotContainer").append('<br> <input type="checkbox" id="Shift" name="Shift" checked> <label for="Shift">Shift</label>');
+	$("#AMBotContainer").append('<br> <input type="checkbox" id="Galaxy" name="Galaxy" checked> <label for="Galaxy">Galaxy</label>');
 	/*$("#dimensions").prepend('<div id="thisInfinity">');
 	$("#dimensions").prepend('<div id="bestInfinity">');
 	$("#dimensions").prepend('<div id="infinitied">');*/
 	$shiftt = el("Shift");
+	$galaxy = el("Galaxy");
 }
 
 function el(id) {
@@ -53,6 +55,7 @@ var $resetLabel = el("resetLabel");
 var $softReset = el("softReset");
 var $first = el("first");
 var $shiftt = null;
+var $galaxy = null;
 
 
 function startAMBot() {
@@ -65,6 +68,8 @@ function startAMBot() {
 		setInterval(clickReplicanti, 50),
 		setInterval(clickTheorem, 50),
 		setInterval(function () {
+			if(! $galaxy.checked)
+				return;
 			//var second_html = $secondResetLabel.innerHTML;
 			var reset_html = $resetLabel.innerHTML;
 			var reset_num = reset_html.replace(/^\D+|\D+$/g, "");
@@ -163,6 +168,7 @@ function clickMaxes() {
 		$secondMax.className==="storebtn" && $secondMax.click();
 	$newDim.click();
 	$softReset.click();
+	// this is somehow buggy
 	buyOneDimension(1);
 	
 }
