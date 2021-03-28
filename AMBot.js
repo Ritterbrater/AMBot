@@ -166,10 +166,11 @@ function clickMaxes() {
 		$thirdMax.className==="storebtn" && $thirdMax.click();
 	if($secondMax != null)
 		$secondMax.className==="storebtn" && $secondMax.click();
-	$newDim.click();
-	$softReset.click();
+	//$newDim.click();
+	
+	//$softReset.click();
 	// this is somehow buggy
-	buyOneDimension(1);
+	//buyOneDimension(1);
 	
 }
 
